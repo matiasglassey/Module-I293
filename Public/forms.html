@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <style>
+        fieldset {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: inline-block;
+            width: 135px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            width: 370px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Formulaire d'enregistrement</h1>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend><strong>Vos coordonnées</strong></legend>
+
+        <label for="appel"></label>
+        <select id="appel" name="appel">
+            <option value="">Comment préférez-vous être appelé ?</option>
+            <option value="prenom">Autre</option>
+            <option value="monsieur">Monsieur</option>
+            <option value="madame">Madame</option>
+        </select>
+        <br>
+
+        <label for="nom">Nom & Prénom :</label>
+        <input type="text" id="nom" name="nom">
+        <br>
+
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse">
+        <br>
+
+        <label for="ville">NPA & Ville :</label>
+        <input type="text" id="ville" name="ville">
+        <br>
+
+        <label for="telephone">No TEL :</label>
+        <input type="tel" id="telephone" name="telephone">
+        <br>
+
+        <label for="email">E-Mail :</label>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <label>Je voyage :</label>
+
+        <input type="radio" id="pied" name="transport" value="pied">
+        <label for="pied" style="width:auto">à pied</label>
+
+        <input type="radio" id="velo" name="transport" value="velo">
+        <label for="velo" style="width:auto">en vélo</label>
+
+        <input type="radio" id="train" name="transport" value="train">
+        <label for="train" style="width:auto">en train</label>
+
+        <input type="radio" id="scooter" name="transport" value="scooter">
+        <label for="scooter" style="width:auto">en scooter</label>
+
+        <input type="radio" id="voiture" name="transport" value="voiture">
+        <label for="voiture" style="width:auto">en voiture</label>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend><strong>Votre compte personnel</strong></legend>
+
+        <label for="utilisateur">Utilisateur :</label>
+        <input type="text" id="utilisateur" name="utilisateur">
+        <br>
+
+        <label for="motdepasse">Mot de passe :</label>
+        <input type="password" id="motdepasse" name="motdepasse">
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend><strong>Vos qualifications</strong></legend>
+
+        <input type="radio" id="cfc" name="qualification" value="CFC">
+        <label for="cfc" style="width:auto">CFC</label>
+
+        <input type="radio" id="es" name="qualification" value="ES">
+        <label for="es" style="width:auto">ES</label>
+
+        <input type="radio" id="hes" name="qualification" value="HES">
+        <label for="hes" style="width:auto">HES</label>
+
+        <br><br>
+
+        <label for="experiences" style="width:auto">
+            Autres qualifications ou autres expériences :
+        </label>
+        <br>
+
+        <textarea id="experiences" name="experiences"
+                  rows="2" cols="60">Veuillez préciser.</textarea>
+
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend><strong>Votre choix de séminaire</strong></legend>
+
+        <select id="seminaire" name="seminaire">
+            <option value="">Veuillez choisir...</option>
+            <option value="seminaire1">Séminaire 1</option>
+            <option value="seminaire2">Séminaire 2</option>
+            <option value="seminaire3">Séminaire 3</option>
+        </select>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <input type="reset" value="Effacer">
+        <input type="submit" value="Envoyer">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>
